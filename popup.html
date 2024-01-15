@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #154687;
+            color: white;
+            width: 300px;
+        }
+        button {
+            background: #FAE81D;
+            color: #000;
+            border: none;
+            border-radius: 8px;
+            padding: 16px 48px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            display: block;
+            margin-top: 5px;
+            margin-bottom: 20px;
+        }
+        button:hover {
+            background-color: #FFD700;
+        }
+        .container {
+            align-items: center;
+            width: 85%;
+            margin: auto;
+            padding: 20px;
+            border-radius: 5px;
+            display: flex;
+            flex-direction: column;
+        }
+        #output {
+            background-color: #fff;
+            border-radius: 4px;
+            padding: 10px;
+            width: 50%;
+        }
+        #output h3 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+        #output table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        #output th,#output td {
+            text-align: left;
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+            color: #000;
+        }
+        #output th {
+                background-color: #f5f5f5;
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <button id="countButton">Count Text</button>
+        <div id="output">
+            <h3>Results:</h3>
+            <table>
+                <tr><th>Characters</th><td id="charCount">0</td></tr>
+                <tr><th>Words</th><td id="wordCount">0</td></tr>
+                <tr><th>Sentences</th><td id="sentenceCount">0</td></tr>
+            </table>
+        </div>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>
